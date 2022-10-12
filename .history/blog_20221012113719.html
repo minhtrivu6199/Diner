@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Diner</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/blog.min.css" />
+  </head>
+
+  <body>
+    <section class="header-banner">
+      <div class="container">
+        <!-- BANNER HEADER -->
+        <div class="banner-header">
+          <div class="banner-logo">
+            <h1>
+              <a href="" class="logo-brand">Diner</a>
+            </h1>
+          </div>
+          <div class="banner-right-content">
+            <div class="search-bar">
+              <form class="search position-relative">
+                <input
+                  type="search"
+                  class="search-input"
+                  placeholder="Search here..."
+                />
+                <span class="fa fa-search search-icon"></span>
+              </form>
+            </div>
+            <div class="menu text-center">
+              <div class="mobile-position">
+                <nav class="navigation">
+                  <!-- <div class="theme-switch-wrapper">
+                      <label for="checkbox" class="theme-switch">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="mode-container">
+                          <i class="fa fa-sun"></i>
+                          <i class="fa fa-moon"></i>
+                        </div>
+                      </label>
+                    </div> -->
+                </nav>
+              </div>
+              <div class="mobile-nav-button text-center">
+                <button id="trigger-overlay" type="button">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- NAV MENU -->
+          <div class="overlay overlay-scale">
+            <button type="button" class="overlay-close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+
+            <nav>
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="error.html">404</a></li>
+                <li><a href="">Landing Page</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Shot Codes</a></li>
+                <li><a href="">Email</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- END NAV MENU -->
+        </div>
+        <!-- END BANNER HEADER -->
+        <div class="header-breadcrumb text-center">
+          <div class="path">
+            <a href="./index.html">Home</a>
+            <span class="fa fa-chevron-right mx-2"></span>
+            <span>Blog</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog py-5">
+      <div class="container py-md-5 py-2">
+        <div class="header-title text-center">
+          <h6 class="subtitle">Latest Posts</h6>
+          <h3 class="title mb-5">Blog Posts</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 blog-left">
+            <div class="row">
+              <div class="col-md-6 item">
+                <div class="card">
+                  <div class="card-header p-0 position-relative">
+                    <a href="">
+                      <img
+                        src="./img/g1.jpg"
+                        alt=""
+                        class="card-img d-block radius-image"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="" class="info-title">Reciepe</a>
+                      <span class="info-content">
+                        <span class="fa fa-clock me-2"></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 card-details">
+                    <a href="" class="card-desc">
+                      The Best Cookie Recipes To Bake This Weekend
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                    <div class="author mt-3">
+                      <div class="author-info">
+                        <a href="" class="img-author">
+                          <img class="radius-image img-fluid" src="./img/team1.jpg" alt="" />
+                        </a>
+                        <a href="">Rashed Kabir</a>
+                      </div>
+                      <a href="" class="read">
+                        Read More
+                        <span class="fa fa-chevron-right ms-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 item mt-lg-0 mt-5">
+                <div class="card">
+                  <div class="card-header p-0 position-relative">
+                    <a href="">
+                      <img
+                        src="./img/g1.jpg"
+                        alt=""
+                        class="card-img d-block radius-image"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="" class="info-title">Reciepe</a>
+                      <span class="info-content">
+                        <span class="fa fa-clock me-2"></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 card-details">
+                    <a href="" class="card-desc">
+                      The Best Cookie Recipes To Bake This Weekend
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                    <div class="author mt-3">
+                      <div class="author-info">
+                        <a href="" class="img-author">
+                          <img class="radius-image img-fluid" src="./img/team1.jpg" alt="" />
+                        </a>
+                        <a href="">Rashed Kabir</a>
+                      </div>
+                      <a href="" class="read">
+                        Read More
+                        <span class="fa fa-chevron-right ms-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 item mt-5">
+                <div class="card">
+                  <div class="card-header p-0 position-relative">
+                    <a href="">
+                      <img
+                        src="./img/g1.jpg"
+                        alt=""
+                        class="card-img d-block radius-image"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="" class="info-title">Reciepe</a>
+                      <span class="info-content">
+                        <span class="fa fa-clock me-2"></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 card-details">
+                    <a href="" class="card-desc">
+                      The Best Cookie Recipes To Bake This Weekend
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                    <div class="author mt-3">
+                      <div class="author-info">
+                        <a href="" class="img-author">
+                          <img class="radius-image img-fluid" src="./img/team1.jpg" alt="" />
+                        </a>
+                        <a href="">Rashed Kabir</a>
+                      </div>
+                      <a href="" class="read">
+                        Read More
+                        <span class="fa fa-chevron-right ms-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 item mt-5">
+                <div class="card">
+                  <div class="card-header p-0 position-relative">
+                    <a href="">
+                      <img
+                        src="./img/g1.jpg"
+                        alt=""
+                        class="card-img d-block radius-image"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="" class="info-title">Reciepe</a>
+                      <span class="info-content">
+                        <span class="fa fa-clock me-2"></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 card-details">
+                    <a href="" class="card-desc">
+                      The Best Cookie Recipes To Bake This Weekend
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                    <div class="author mt-3">
+                      <div class="author-info">
+                        <a href="" class="img-author">
+                          <img class="radius-image img-fluid" src="./img/team1.jpg" alt="" />
+                        </a>
+                        <a href="">Rashed Kabir</a>
+                      </div>
+                      <a href="" class="read">
+                        Read More
+                        <span class="fa fa-chevron-right ms-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 item mt-5">
+                <div class="card">
+                  <div class="card-header p-0 position-relative">
+                    <a href="">
+                      <img
+                        src="./img/g1.jpg"
+                        alt=""
+                        class="card-img d-block radius-image"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="" class="info-title">Reciepe</a>
+                      <span class="info-content">
+                        <span class="fa fa-clock me-2"></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 card-details">
+                    <a href="" class="card-desc">
+                      The Best Cookie Recipes To Bake This Weekend
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                    <div class="author mt-3">
+                      <div class="author-info">
+                        <a href="" class="img-author">
+                          <img class="radius-image img-fluid" src="./img/team1.jpg" alt="" />
+                        </a>
+                        <a href="">Rashed Kabir</a>
+                      </div>
+                      <a href="" class="read">
+                        Read More
+                        <span class="fa fa-chevron-right ms-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 item mt-5">
+                <div class="card">
+                  <div class="card-header p-0 position-relative">
+                    <a href="">
+                      <img
+                        src="./img/g1.jpg"
+                        alt=""
+                        class="card-img d-block radius-image"
+                      />
+                    </a>
+                    <div class="info">
+                      <a href="" class="info-title">Reciepe</a>
+                      <span class="info-content">
+                        <span class="fa fa-clock me-2"></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 card-details">
+                    <a href="" class="card-desc">
+                      The Best Cookie Recipes To Bake This Weekend
+                    </a>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                    <div class="author mt-3">
+                      <div class="author-info">
+                        <a href="" class="img-author">
+                          <img class="radius-image img-fluid" src="./img/team1.jpg" alt="" />
+                        </a>
+                        <a href="">Rashed Kabir</a>
+                      </div>
+                      <a href="" class="read">
+                        Read More
+                        <span class="fa fa-chevron-right ms-2"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 pagination mt-5 pt-lg-3 text-center">
+                <ul class="page-pagination">
+                    <li>
+                        <span class="page-numbers current">1</span>
+                    </li>
+                    <li>
+                        <a class="page-numbers">2</a>
+                    </li>
+                    <li>
+                        <a class="page-numbers">3</a>
+                    </li>
+                    <li>
+                        <a class="next">
+                            Next
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 blog-right ps-lg-5 mt-lg-0 mt-4">
+            <div class="sidebar">
+                <div class="sidebar-widget">
+                    <div class="sidebar-title mb-4">
+                        <div class="title-sidebar">
+                            <h3 class="title">Latest recipes
+                            </h3>
+                        </div>
+                        <article class="single-post">
+                            <figure class="post-thumb">
+                                <img src="./img/banner1.jpg" alt="" class="radius-image img-fluid">
+                                <div class="text-small">
+                                    <a href="">How to make capuccino</a>
+                                </div>
+                            </figure>
+                            <figure class="post-thumb">
+                                <img src="./img/banner1.jpg" alt="" class="radius-image img-fluid">
+                                <div class="text-small">
+                                    <a href="">How to make capuccino</a>
+                                </div>
+                            </figure>
+                            <figure class="post-thumb">
+                                <img src="./img/banner1.jpg" alt="" class="radius-image img-fluid">
+                                <div class="text-small">
+                                    <a href="">How to make capuccino</a>
+                                </div>
+                            </figure>
+                            <figure class="post-thumb">
+                                <img src="./img/banner1.jpg" alt="" class="radius-image img-fluid">
+                                <div class="text-small">
+                                    <a href="">How to make capuccino</a>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <div class="title-sidebar mb-4">
+                        <h3 class="title">Trending Posts</h3>
+                    </div>
+                    <article class="post">
+                        <figure class="post-thumb">
+                            <img src="./img/g3.jpg" alt="" class="radius-image img-fluid">
+                        </figure>
+                        <div class="text">
+                            <a href="">12 Curry Recipes You’ll Ever Need </a>
+                            <p>Feb 4, 2021</p>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <figure class="post-thumb">
+                            <img src="./img/g3.jpg" alt="" class="radius-image img-fluid">
+                        </figure>
+                        <div class="text">
+                            <a href="">12 Curry Recipes You’ll Ever Need </a>
+                            <p>Feb 4, 2021</p>
+                        </div>
+                    </article>
+                    <article class="post">
+                        <figure class="post-thumb">
+                            <img src="./img/g3.jpg" alt="" class="radius-image img-fluid">
+                        </figure>
+                        <div class="text">
+                            <a href="">12 Curry Recipes You’ll Ever Need </a>
+                            <p>Feb 4, 2021</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="sidebar-widget">
+                    <div class="title-sidebar mb-4">
+                        <h3 class="title">Categories</h3>
+                    </div>
+                    <ul class="sidebar-cate">
+                        <li>
+                            <a href="">Desserts</a>
+                        </li>
+                        <li>
+                            <a href="">Cake and Biscuits</a>
+                        </li>
+                        <li>
+                            <a href="">Food recipes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <div class="title-sidebar mb-4">
+                        <h3 class="title">Advertisement</h3>
+                    </div>
+                    <a href="">
+                        <img src="./img/g1.jpg" alt="" class="img-fluid radis-image">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END BLOG -->
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <div class="py-5">
+        <div class="container py-lg-4">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7 pe-lg-5">
+              <div class="footer-logo mb-3">
+                <h2>
+                  <a href="./index.html" class="navbar-brand">Diner</a>
+                </h2>
+              </div>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                amet Semper at elit.
+              </p>
+              <div class="social mt-4">
+                <a href="" class="icon">
+                  <span class="fab fa-facebook-f"></span>
+                </a>
+                <a href="" class="icon">
+                  <span class="fab fa-twitter"></span>
+                </a>
+                <a href="" class="icon">
+                  <span class="fab fa-instagram"></span>
+                </a>
+                <a href="" class="icon">
+                  <span class="fab fa-linkedin"></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5">
+              <ul>
+                <h6 class="footer-title">Usefull Links</h6>
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">Services</a>
+                </li>
+                <li>
+                  <a href="">Blog posts</a>
+                </li>
+                <li>
+                  <a href="">Careers</a>
+                </li>
+                <li>
+                  <a href="">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5">
+              <ul>
+                <h6 class="footer-title">More Info</h6>
+                <li>
+                  <a href="">History</a>
+                </li>
+                <li>
+                  <a href="">Vision & Values</a>
+                </li>
+                <li>
+                  <a href="">Awards</a>
+                </li>
+                <li>
+                  <a href="">Media</a>
+                </li>
+                <li>
+                  <a href="">Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-7 mt-lg-0 mt-5">
+              <h6 class="footer-title">Subscribe to our Newsletter</h6>
+              <p>
+                Enter your email and receive the latest news, updates and
+                special offers from us.
+              </p>
+              <form action="" class="subscribe mt-4">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email Address"
+                />
+                <button class="btn-style w-100 mt-3">Subscibe Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <p>
+              © 2021 Diner. All rights reserved. Design by
+              <a href="">W3Layouts</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex text-lg-end">
+              <a href="">Careers</a>
+              <a href="" class="mx-lg-5 mx-md-4 mx-3">Privacy Policy</a>
+              <a href="">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS -->
+    <script src="./js/modernizr-2.6.2.min.js"></script>
+    <script src="./js/classie.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

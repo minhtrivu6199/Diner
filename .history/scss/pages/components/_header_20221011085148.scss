@@ -1,0 +1,74 @@
+.header-banner {
+    background-image: linear-gradient(to right, $orange, hsl(30deg 100% 1% / 20%)),
+      url(../img/banner2.jpg);
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 350px;
+    .container {
+      .banner-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0 20px 0;
+        .banner-logo {
+          .logo-brand {
+            font-size: 36px;
+            font-weight: 700;
+            color: $white;
+          }
+        }
+  
+        .banner-right-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .search-bar {
+            display: flex;
+            .search {
+              .search-input {
+                padding: 10px 50px 10px 20px;
+                height: 45px;
+                font-size: 16px;
+                color: $font-color;
+                font-weight: 400;
+                border-radius: 6px;
+                position: relative;
+                right: 0;
+                background: $white;
+                outline: 0;
+                border: 1px solid $white;
+              }
+              .search-icon {
+                position: absolute;
+                right: 20px;
+                font-size: 15px;
+                cursor: pointer;
+                top: 15px;
+              }
+            }
+          }
+  
+          .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .mobile-nav-button {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+
+      .header-breadcrumb {
+        .path {
+            padding-top: 81px;
+            a {
+                color: $orange;
+                font-size: 18px;
+            }
+        }
+      }
+    }
+  }

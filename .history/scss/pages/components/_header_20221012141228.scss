@@ -1,0 +1,114 @@
+.header-banner {
+    background-image: linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)),
+      url(../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 350px;
+    .container {
+      .banner-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0 20px 0;
+        .banner-logo {
+          .logo-brand {
+            font-size: 36px;
+            font-weight: 700;
+            color: $white;
+          }
+        }
+  
+        .banner-right-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .search-bar {
+            display: flex;
+            .search {
+              .search-input {
+                padding: 10px 50px 10px 20px;
+                height: 45px;
+                font-size: 16px;
+                color: var(--font-color);
+                font-weight: 400;
+                border-radius: 6px;
+                position: relative;
+                right: 0;
+                background: var(--bg-color);
+                outline: 0;
+                border: 1px solid var(--bg-color);
+              }
+              .search-icon {
+                position: absolute;
+                right: 20px;
+                font-size: 15px;
+                cursor: pointer;
+                top: 15px;
+              }
+            }
+          }
+  
+          .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .mobile-nav-button {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+
+      .header-breadcrumb {
+        .path {
+            padding-top: 81px;
+            a {
+                color: var(--primary-color);
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            span {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 600;
+                color: $white;
+            }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px){
+      & {
+        .container {
+          .banner-header {
+            padding: 20px 0 10px 0;
+            .banner-logo {
+              .logo-brand {
+                font-size: 18px;
+              }
+            }
+  
+            .banner-right-content {
+              .search-bar {
+                .search {
+                  .search-input {
+                    padding: 10px 20px 10px 10px;
+                    height: 20px;
+                  }
+                  .search-icon {
+                    top: 5px;
+                  }
+                }
+              }
+            }
+          }
+  
+        }
+      }
+    }
+  }

@@ -1,0 +1,115 @@
+// Color
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #ff6600;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$light-gray: #f7f7f7;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$light-orange: #f8b195;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+$font-color: rgba(22, 28, 45, 0.7);
+
+
+[data-theme="dark"] {
+  --primary-color: #ff6600;
+  --secondary-color: #ffc600;
+  --font-color: #c2d0da;
+  --bg-color: #232220;
+  --heading-color: #eee;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --border-color-light: rgba(255, 255, 255, 0.1);
+  --nav-color: #fff;
+  --dropdown-color: #121725;
+  --iframe-filter: grayscale(100%);
+  --bg-light: #282828;
+  --bg-grey: #282828;
+  --card-bg: #888c96;
+  --footer-bg: #000;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.subtitle {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: $orange;
+}
+
+.title {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Quicksand', sans-serif;
+    color: $font-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-style {
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3 ease-in;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    color: $white;
+    background-color: $orange;
+    &:hover {
+        color: $white;
+        background-color: $orange;
+        opacity: 0.8;
+        border: 2px solid $orange;
+    }
+}
+
+.radius-image {
+    border-radius: 6px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,42 @@
+@import './base/variables';
+@import './pages/components/menu';
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    // color: $orange;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.header-banner {
+    background-image: linear-gradient(to right, $orange, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 700px;
+    .container {
+        max-width: 1200px;
+        .banner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .banner-logo {
+
+            }
+
+            .banner-right-content {
+
+            }
+
+        }
+
+        .banner-info {
+
+        }
+
+    }
+}

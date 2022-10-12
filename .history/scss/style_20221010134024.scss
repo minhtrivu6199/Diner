@@ -1,0 +1,33 @@
+@import './base/variables';
+@import './pages/components/menu';
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    // color: $orange;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.header-banner {
+    background-image: linear-gradient(to right, $orange, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+    .container {
+        .banner-header {
+            .banner-logo {
+
+            }
+
+            .banner-right-content {
+
+            }
+
+        }
+
+        .banner-info {
+
+        }
+
+    }
+}

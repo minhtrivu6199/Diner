@@ -1,0 +1,23 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+@import "../components/footer";
+
+.blog {
+    background: $light-gray;
+    .item {
+        .card {
+            position: relative;
+            word-wrap: break-word;
+            background-color: transparent;
+            background-clip: border-box;
+            border: none;
+            border-radius: 6px;
+            .info {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+@import "../components/footer";
+
+.blog {
+    background: $light-gray;
+    .item {
+        .card {
+            position: relative;
+            word-wrap: break-word;
+            background-color: transparent;
+            background-clip: border-box;
+            border: none;
+            border-radius: 6px;
+            .info {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                .info-title {
+                    background: $orange;
+                    color: $white;
+                    padding: 3px 20px;
+                    border-radius: 35px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    letter-spacing: 0.05em;
+                }
+                .info-content {
+                    color: $white;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    letter-spacing: 0.02em;
+                }
+            }
+
+            .card-body {
+                .card-desc {
+                    display: block;
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: 600;
+                    color: #000;
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                }
+
+                .author {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .author-info {
+                        display:flex;
+                        align-items: center;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            display: block;
+                            overflow: hidden;
+                            border-radius: 50%;
+                        }
+
+                        a {
+                            font-weight: 700;
+                            color: #000;
+                            letter-spacing: 0.02em;
+                            margin-left: 5px;
+                        }
+
+                        
+                    }
+                    a.read {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #000;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination {
+        display: block;
+        .page-pagination li {
+            display: inline-block;
+            margin: 5px;
+            list-style: none;
+            .page-numbers, .next {
+                display: block;
+                padding: 8px 16px;
+                background-color: $light-gray;
+                border: 1px solid #eee;
+                border-radius: 6px;
+                font-weight: 600;
+                color: $font-color;
+                box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+                &:hover {
+                    background-color: $white;
+                    color: $orange;
+                    border: 1px solid $orange;
+                }
+            }
+    
+            .current.page-numbers {
+                border: 1px solid $orange;
+                background: $orange;
+                color: $white;
+            }
+    
+           
+        }
+    }
+
+    .sidebar {
+        .sidebar-widget {
+            margin-bottom: 40px;
+            padding: 40px 30px;
+            background: $white;
+            border-radius: 6px;
+            .title {
+                font-size: 26px;
+                line-height: 38px;
+            }
+
+            .single-post {
+                display: grid;
+                grid-template-columns:  1fr 1fr;
+                gap: 20px;
+                .text-small a {
+                    display: block;
+                    font-size: 17px;
+                    line-height:22px;
+                    font-weight: 700;
+                    color: #000;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

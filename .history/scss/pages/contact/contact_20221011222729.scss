@@ -1,0 +1,26 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+
+.contact {
+    .contact-form {
+        form input, textarea {
+            background: $light-gray;
+            border: 1px solid transparent;
+            color: $font-color;
+            font-size: 18px;
+            padding: 12px 20px;
+            line-height: 28px;
+            width: 100%;
+            border-radius: 6px;
+            height: 58px;
+            margin: 6px;
+            &:focus {
+                outline: none;
+                border: 1px solid $orange;
+                background: $white;
+                box-shadow: none;
+            }
+        }
+    }
+}

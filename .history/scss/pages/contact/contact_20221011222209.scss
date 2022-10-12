@@ -1,0 +1,11 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+
+.contact {
+    .contact-form {
+        form input {
+            background: $light-gray;
+        }
+    }
+}

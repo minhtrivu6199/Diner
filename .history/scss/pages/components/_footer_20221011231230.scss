@@ -1,0 +1,90 @@
+.footer {
+  background: #000;
+  .footer-logo {
+    h2 a {
+      font-size: 30px;
+      font-weight: 600;
+      color: $white;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #a5a2a1;
+  }
+  .social {
+    a {
+      margin-right: 10px;
+      color: $orange;
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      background-color: $white;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 6px;
+      transition: 0.3s;
+      &:hover {
+        color: $white;
+        background-color: $orange;
+      }
+    }
+  }
+
+  .footer-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    color: $white;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+    a {
+      font-size: 17px;
+      line-height: 26px;
+      color: #a5a2a1;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+  input {
+    padding: 14px 20px;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    color: $font-color;
+    background: $white;
+    border-radius: 6px;
+  }
+}
+
+.copyright {
+    background: #000;
+    p {
+        color: #a5a2a1;
+        font-size: 17px;
+        a {
+            color: $orange;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    a {
+        font-size: 17px;
+        line-height: 26px;
+        color: #a5a2a1;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

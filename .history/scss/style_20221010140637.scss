@@ -1,0 +1,63 @@
+@import './base/variables';
+@import './pages/components/menu';
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    // color: $orange;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.header-banner {
+    background-image: linear-gradient(to right, $orange, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 700px;
+    .container {
+        max-width: 1200px;
+        .banner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0 20px 0;
+            .banner-logo {
+                .logo-brand {
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+
+            .banner-right-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .search-bar {
+                    display: flex;
+                    .search {
+                        .search-input {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .menu {
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                }
+
+            }
+
+        }
+
+        .banner-info {
+
+        }
+
+    }
+}
