@@ -1,0 +1,187 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+@import "../components/footer";
+// @import "../../style.scss";
+// @import "../../page/components/rightbar";
+.thumbnail {
+    background-image: url(../img/banner2.jpg);
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    @media screen and(max-width:415px) {
+      height: 300px !important;
+    }
+    .overlay {
+      background: rgb(16 15 19 / 66%);
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      .welcome {
+        max-width: 700px;
+        margin: 0 auto;
+        .content-text {
+          font-size: 45px;
+          line-height: 55px;
+          font-weight: 600;
+          color: #fff;
+          max-width: 800px;
+          @media screen and (max-width: 1080px) {
+            font-size: 40;
+            line-height: 50px;
+            width: 100%;
+          }
+          @media screen and (max-width: 736px) {
+            font-size: 35px;
+            line-height: 40px;
+          }
+          @media screen and (max-width: 415px) {
+            font-size: 26px !important;
+            line-height: 34px !important;
+          }
+        }
+        .btn-rm-cu {
+          .btn-readmore {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 12px 45px;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 700;
+            transition: 0.3s ease-in;
+            border-radius: 6px;
+            cursor: pointer;
+            display: inline-block;
+            @media screen and(max-width:376px) {
+              font-size: 16px;
+            }
+            @media screen and(max-width:480px) {
+              padding: 10px 21px;
+            }
+            &:hover {
+              background-color: white;
+              color: #ff6600;
+            }
+            i {
+              margin-left: 10px;
+              font-size: 16px;
+            }
+          }
+          .btn-contact {
+            padding: 12px 45px;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 700;
+            transition: 0.3s ease-in;
+            border-radius: 6px;
+            border: 2px solid transparent;
+            color: white;
+            background-color: #ff6600;
+            display: inline-block;
+            @media screen and(max-width:376px) {
+              font-size: 16px;
+            }
+            @media screen and(max-width:480px) {
+              padding: 10px 21px;
+            }
+            &:hover {
+              opacity: 0.6;
+            }
+            i {
+              margin-left: 10px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+.services {
+  position: relative;
+  .services-box {
+    padding: 40px 40px;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+    background-color: var(--bg-color);
+    position: relative;
+    border: 1px solid var(--border-color-light);
+    &:hover {
+      box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+      .box .icon {
+        background-color: var(--primary-color);
+        transition: 0.3s ease-in-out;
+        span {
+          color: $white;
+        }
+      }
+    }
+    .box {
+      display: flex;
+      justify-content: flex-start;
+      .icon {
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        background: rgba(130, 115, 252, 0.05);
+        line-height: 70px;
+        border-radius: 6px;
+        transition: 0.3 ease-in-out;
+        span {
+          color: var(--primary-color);
+          font-size: 25px;
+          line-height: 70px;
+        }
+      }
+      .info {
+        padding-left: 30px;
+        p {
+          padding: 0;
+          margin: 0;
+        }
+        h4 a {
+          font-size: 24px;
+          font-weight: 600;
+          margin-top: 5px;
+          color: var(--heading-color);
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+.our-menu {
+  .text-right {
+    padding-right: 0;
+  }
+  .menu-item {
+    .border-dot {
+      padding-bottom: 10px;
+      border-bottom: 2px dotted #bbb;
+    }
+    .menu-item-name {
+      h6 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .menu-item-price {
+      h6 {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: var(--primary-color);
+        text-align: right;
+      }
+    }
+  }
+}

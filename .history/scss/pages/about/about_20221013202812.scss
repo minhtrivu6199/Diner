@@ -1,0 +1,138 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+@import "../components/footer";
+// @import "../../style.scss";
+// @import "../../page/components/rightbar";
+.about-us {
+  .w-doing {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    display: grid;
+    @media screen and (max-width: 415px) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and(max-width:568px) {
+      grid-row-gap: 20px;
+      grid-column-gap: 15px;
+    }
+  }
+  h4 a {
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    &:hover {
+      color: #ffc600;
+    }
+  }
+  .grid {
+    @media screen and(max-width:800px) {
+      grid-template-columns: 50px 1fr;
+      grid-gap: 15px;
+    }
+  }
+}
+
+.skill {
+  background-color: var(--bg-grey);
+  .skill-bar {
+    .list-skill {
+      margin-bottom: 25px;
+      text-align: left;
+      .list-title {
+        font-size: 18px;
+        color: var(--heading-color);
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      .list-width {
+        display: flex;
+        height: 0.5em;
+        overflow: hidden;
+        font-size: 0.75em;
+        background-color: var(--font-color);
+        border-radius: 0.25em;
+        .width-item {
+          background-color: var(--primary-color);
+          transition: width 0.6s ease;
+          background-image: none;
+          background-size: 1em 1em;
+        }
+      }
+    }
+  }
+  .skill-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+    img {
+      border-radius: 6px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.info-chef {
+  .team-chef {
+    .team-memer {
+      position: relative;
+      overflow: hidden;
+      &:hover .hiden-item {
+        opacity: 1;
+      }
+      &:hover .name-chef {
+        color: var(--primary-color);
+      }
+      .img-team {
+        position: relative;
+        overflow: hidden;
+        img {
+          transition: all 0.2s ease-in-out;
+          overflow: hidden;
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+    }
+    .hiden-item {
+      opacity: 0;
+      position: absolute;
+      bottom: 34%;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      z-index: 2;
+      transition: all 0.4s ease-in-out;
+      a {
+        display: inline-block;
+        margin-right: 5px;
+        i {
+          color: white;
+          font-size: 16px;
+          display: block;
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          line-height: 42px;
+          text-align: center;
+          transition: all 0.3s ease 0s;
+          background: rgba(157, 157, 157, 0.5);
+          &:hover {
+            color: var(--primary-color);
+            background-color: white;
+          }
+        }
+      }
+    }
+    .name-chef {
+      margin: 25px 0 0px;
+      font-size: 24px;
+      color: var(--heading-color);
+      font-weight: 700;
+      display: block;
+    }
+  }
+}

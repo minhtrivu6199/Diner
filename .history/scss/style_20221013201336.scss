@@ -517,7 +517,7 @@
 }
 
 .video {
-  background-color: var(--bg-color);
+  background-color: white;
   .media {
     position: relative;
     .poster {
@@ -602,14 +602,14 @@
 }
 
 .blog-post {
-  background: var(--bg-grey);
+  background: #f7f7f7;
   .title {
     h6 {
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
       letter-spacing: 1px;
-      color: var(--heading-color);
+      color: #ff6600;
       display: block;
       font-family: "Pacifico", cursive;
     }
