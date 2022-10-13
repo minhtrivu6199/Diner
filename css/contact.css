@@ -584,6 +584,9 @@ button#trigger-overlay {
   .header-banner .container .banner-header .banner-logo .logo-brand {
     font-size: 18px;
   }
+  .header-banner .container .banner-header .banner-right-content .search-bar {
+    display: none;
+  }
   .header-banner .container .banner-header .banner-right-content .search-bar .search .search-input {
     padding: 10px 20px 10px 10px;
     height: 20px;
