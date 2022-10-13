@@ -1,0 +1,50 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/backtotop";
+
+.errorpage {
+    .container {
+        .error-block {
+            max-width: 600px;
+            margin: 0 auto;
+            h1 {
+                font-weight: 700;
+                font-size: 130px;
+                letter-spacing: 5px;
+            }
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            .search-form {
+                position: relative;
+                max-width: 500px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                input {
+                    color: var(--font-color);
+                    padding: 12px 120px 12px 25px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    background: var(--bg-grey);
+                    border-radius: 6px;
+                    font-weight: 500;
+                    display: block;
+                    border: 1px solid #ced4da;
+                    &:focus {
+                        outline: none;
+                        border: 1px solid var(--primary-color);
+                        background: var(--bg-color);
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

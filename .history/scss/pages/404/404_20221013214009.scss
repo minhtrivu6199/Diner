@@ -1,0 +1,18 @@
+@import "../../base/variables";
+@import "../components/menu";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/backtotop";
+
+.errorpage {
+    .container {
+        .error-block {
+            max-width: 600px;
+            h1 {
+                font-weight: 700;
+                font-size: 130px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+}
