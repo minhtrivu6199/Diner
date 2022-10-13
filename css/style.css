@@ -712,7 +712,7 @@ button#trigger-overlay {
 }
 
 .about-us .container .content .content-right p {
-  color: rgba(22, 28, 45, 0.7);
+  color: var(--font-color);
 }
 
 .agent {
@@ -998,7 +998,7 @@ button#trigger-overlay {
   }
 }
 .achievement .list-achive .item {
-  background-color: #fff;
+  background-color: var(--bg-color);
   box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
   padding: 40px 20px;
   border-radius: 6px;
@@ -1011,7 +1011,7 @@ button#trigger-overlay {
   box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
 }
 .achievement .list-achive .item .icon i {
-  background: #ff6600;
+  background: var(--primary-color);
   font-size: 26px;
   border-radius: 50%;
   width: 68px;
@@ -1023,12 +1023,12 @@ button#trigger-overlay {
 .achievement .list-achive .item .number p {
   font-size: 2.6em;
   font-weight: 600;
-  color: #232121;
+  color: var(--font-color);
   margin-top: 10px;
 }
 .achievement .list-achive .item .text span {
   text-transform: capitalize;
-  color: rgba(22, 28, 45, 0.7);
+  color: var(--font-color);
   font-weight: 600;
 }
 
@@ -1122,26 +1122,11 @@ button#trigger-overlay {
 .blog-post {
   background: var(--bg-grey);
 }
-.blog-post .title h6 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: var(--heading-color);
-  display: block;
-  font-family: "Pacifico", cursive;
-}
-.blog-post .title h3 {
-  font-size: 38px;
-  line-height: 48px;
-  font-weight: 600;
-  color: #232121;
-}
 .blog-post .card {
   border: none;
   position: relative;
   word-wrap: break-word;
-  background-color: rgba(104, 58, 58, 0);
+  background-color: transparent;
 }
 .blog-post .card .card-header {
   position: relative;
@@ -1155,7 +1140,7 @@ button#trigger-overlay {
   left: 10px;
 }
 .blog-post .card .card-header .post-pos .link {
-  background: #ff6600;
+  background: var(--primary-color);
   color: #fff;
   padding: 3px 20px;
   border-radius: 35px;
@@ -1184,13 +1169,13 @@ button#trigger-overlay {
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
-  color: #232121;
+  color: var(--heading-color);
   margin-top: 25px;
   margin-bottom: 15px;
   transition: 0.3s ease;
 }
 .blog-post .card .card-body .card-text {
-  color: rgba(22, 28, 45, 0.7);
+  color: var(--font-color);
 }
 .blog-post .card .info {
   width: 65%;
@@ -1209,7 +1194,7 @@ button#trigger-overlay {
 }
 .blog-post .card .info .name {
   font-weight: 700;
-  color: #232121;
+  color: var(--heading-color);
   letter-spacing: 0.02em;
   width: 60%;
 }
@@ -1219,11 +1204,11 @@ button#trigger-overlay {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: #232121;
+  color: var(--heading-color);
   opacity: 0.9;
 }
 .blog-post .card .read-more:hover {
-  color: #ff6600;
+  color: var(--primary-color);
 }
 
 .carousel .title h6 {
@@ -1290,14 +1275,14 @@ button#trigger-overlay {
   padding: 0;
   font-size: 18px;
   line-height: 28px;
-  color: rgba(22, 28, 45, 0.7);
+  color: var(--font-color);
 }
 .carousel .item .content .testimonial .info-person h3 {
   margin: 0;
   font-weight: 600;
   font-size: 20px;
   padding: 0;
-  color: #232121;
+  color: var(--heading-color);
 }
 .carousel .item .content .testimonial .info-person p {
   font-size: 18px;

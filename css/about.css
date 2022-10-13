@@ -707,7 +707,7 @@ button#trigger-overlay {
   font-weight: 600;
 }
 .about-us h4 a:hover {
-  color: #ffc600;
+  color: var(--secondary-color);
 }
 @media screen and (max-width: 800px) {
   .about-us .grid {
