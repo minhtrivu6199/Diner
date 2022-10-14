@@ -746,3 +746,22 @@ button#trigger-overlay {
   font-size: 18px;
   color: var(--heading-color);
 }
+@media only screen and (max-width: 768px) {
+  .errorpage .container .error-block {
+    max-width: 300px;
+  }
+  .errorpage .container .error-block h1 {
+    font-size: 65px;
+  }
+  .errorpage .container .error-block h2 {
+    font-size: 20px;
+  }
+  .errorpage .container .error-block .search-form {
+    max-width: 250px;
+    flex-direction: column;
+  }
+  .errorpage .container .error-block .search-form input {
+    padding: 12px 60px 12px 25px;
+    margin-bottom: 10px;
+  }
+}
